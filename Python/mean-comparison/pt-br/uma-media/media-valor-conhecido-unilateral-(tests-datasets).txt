@@ -1,0 +1,44 @@
+# ## Exemplo 8.11, Andrade & Ogliari (ok, 11/01/2023)
+# ## --> t_calc = -0.847
+# ## --> t_tab = -1.833
+# ## --> p_valor = 0.2095
+# ## Aceita H0
+
+
+# alfa = 0.05 
+# known_value = 186
+# dec_places = 3
+# x_exp = np.array([178, 199, 182, 186, 188, 191, 189, 185, 174, 158])
+# rotulo = "Grupo A"
+
+
+# ## Exemplo 5.15, Ott & Longnecker (ok, 16/01/2023)
+# ## --> t_calc = 2,2
+# ## --> t_tab = 2,896
+# ## --> p_valor = 0,029
+# ## alfa = 1%
+# ## Aceita H0
+
+
+# alfa = 0.01
+# known_value = .3
+# dec_places = 3
+# x_exp = np.array([.593, .142, .329, .691, .231, .793, .519, .392, .418])
+# rotulo = "Grupo A"
+
+
+
+# ## Exemplo 9.6, Montgomery (ok, 16/01/2023)
+# ## --> t_calc = 2,72
+# ## --> t_tab = 2,624
+# ## --> p_valor = 0,008
+# ## alfa = 5%
+# ## Rejeita H0
+
+
+# alfa = 0.05
+# known_value = .82
+# dec_places = 3
+# x_exp = np.array([0.8411, 0.8191, 0.8182, 0.8125, 0.8750, 0.8580, 0.8532, 0.8483, 0.8276, 0.7983, 0.8042, 0.8730,
+#                   0.8282, 0.8359, 0.8660])
+# rotulo = "Grupo A"
