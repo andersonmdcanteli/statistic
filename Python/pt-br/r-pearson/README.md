@@ -508,7 +508,7 @@ plt.show()
 
 Apesar da baixa aplicabilidade, a estatística do coeficiente de Pearson e os testes de hipótese são uma excelente forma de demonstrar através de um conceito simples (o coeficiente de correlação), a importancia da forma da distribuição. 
 
-Um ponto relevante a ser discutido é o uso da distribuição Normal para obter os valores críticos. No exemplo utilizado, temos apenas 5 observações, o que não é suficiente para adotar a distribuição Normal. Talvez o uso da distribuição t de Student seja mais adequada para conjuntos de dados pequenos ($ n < 30 $), de forma a "punir" o intervalo de confiança devido ao baixo tamanho amostral. 
+Um ponto relevante a ser discutido é o uso da distribuição Normal para obter os valores críticos. No exemplo utilizado, temos apenas 5 observações, o que não é suficiente para adotar a distribuição Normal. Talvez o uso da distribuição t de Student seja mais adequada para conjuntos de dados pequenos ($n < 30$), de forma a "punir" o intervalo de confiança devido ao baixo tamanho amostral. 
 
 Devido a baixo tamanho amostral, é muito provavel que o intervalo do coeficiente de Person esta sub-estimado.
 
