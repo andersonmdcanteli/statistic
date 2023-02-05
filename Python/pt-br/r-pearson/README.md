@@ -215,7 +215,7 @@ Isto é contornado transformando o coeficiente de Pearson utilizando a transform
 
 Esta distribuição Z tem média:
 
-$$ \mu_Z = arctanh \; (r_{pearson}) = \frac{1}{2} \ln{\frac{1 + r_{pearson}}{1 - r_{pearson}}} $$
+$$ \mu_Z = arctanh (r_{pearson}) = \frac{1}{2} \ln{\frac{1 + r_{pearson}}{1 - r_{pearson}}} $$
 
 E devio padrão igual a:
 
@@ -223,7 +223,7 @@ $$ \sigma_Z = \sqrt{\frac{1}{n-3}} $$
 
 A estatística do teste pode ser formulada da seguinte forma:
 
-$$ Z_0 = (arctanh \; (r) -arctanh \; (\rho_0)) \sqrt{n-3} $$
+$$ Z_0 = (arctanh (r) -arctanh (\rho_0)) \sqrt{n-3} $$
 
 onde $\rho_0$ é o valor esperado para o coeficiente de correlação. As hipóteses para este caso são:
 
@@ -232,7 +232,7 @@ onde $\rho_0$ é o valor esperado para o coeficiente de correlação. As hipóte
 
 > $H_1$: $\rho  \neq \rho_0$;
 
-Os valores críticos são obtidos da distribuição Normal padrão bilateral ($Z_{1-\alpha/2}$). Podemos então concluir o teste da seguinte forma:
+Os valores críticos são obtidos da distribuição Normal padrão bilateral ( $Z_{1-\alpha/2}$). Podemos então concluir o teste da seguinte forma:
 
 > Se $|Z_0| > Z_{1-\alpha/2}$, temos evidências para rejeitar a hipótese nula, e $\rho \neq \rho_0 $;
 
