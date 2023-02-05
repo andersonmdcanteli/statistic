@@ -215,7 +215,7 @@ Isto é contornado transformando o coeficiente de Pearson utilizando a transform
 
 Esta distribuição Z tem média:
 
-$$ \mu_Z = arctanh \; r_{pearson} = \frac{1}{2} \ln{\frac{1 + r_{pearson}}{1 - r_{pearson}}} $$
+$$ \mu_Z = arctanh \; (r_{pearson}) = \frac{1}{2} \ln{\frac{1 + r_{pearson}}{1 - r_{pearson}}} $$
 
 E devio padrão igual a:
 
