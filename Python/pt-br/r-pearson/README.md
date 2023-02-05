@@ -522,7 +522,7 @@ Devido a baixo tamanho amostral, é muito provavel que o intervalo do coeficient
 
 - Script para criar gráficos, gif, e vídeos para exemplificar o coeficiente de correlação: [link](https://github.com/andersonmdcanteli/statistic/blob/master/Python/pt-br/r-pearson/r-plot.ipynb);
 
-- Script para gerar gráfico do intervalo de confiança do coeficiente de Pearson variando o nível de significância ($\alpha$): [link](https://github.com/andersonmdcanteli/statistic/blob/master/Python/pt-br/r-pearson/r_pearson-intervalo-confianca-variando-alfa.ipynb);
+- Script para gerar gráfico do intervalo de confiança do coeficiente de Pearson variando o nível de significância ( $\alpha$ ): [link](https://github.com/andersonmdcanteli/statistic/blob/master/Python/pt-br/r-pearson/r_pearson-intervalo-confianca-variando-alfa.ipynb);
 
 - - Script para gerar gráfico do intervalo de confiança do coeficiente de Pearson variando o tamanho amostral: [link](https://github.com/andersonmdcanteli/statistic/blob/master/Python/pt-br/r-pearson/r_pearson-intervalo-confianca-variando-tamanho-amostral.ipynb)
 
