@@ -142,7 +142,7 @@ text
 
 ## Verificando a significância do coeficiente de Pearson
 
-Em alguns casos é útil um teste de hipótese para verificar se o coeficiente de correlação é significativo. Partimos do pressuposto que o coeficiente de correlação ($\rho $, que é adotado para denotar o valor populacional) é igual a 0, e procuramos por evidências para falsear esta hipótese. Ou seja:
+Em alguns casos é útil um teste de hipótese para verificar se o coeficiente de correlação é significativo. Partimos do pressuposto que o coeficiente de correlação ($\rho$, que é adotado para denotar o valor populacional) é igual a 0, e procuramos por evidências para falsear esta hipótese. Ou seja:
 
 > $H_0$: $\rho =0$;
 
