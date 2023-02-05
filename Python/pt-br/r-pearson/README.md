@@ -20,7 +20,7 @@ O cálculo do coeficiente de correlação de Pearson envolve a determinação da
 
 O coeficiente de correlação de Pearson é amplamente utilizado na análise de dados para avaliar a força e a direção da associação linear entre duas variáveis. Ele é amplamente utilizado em diversas áreas, incluindo biologia, economia, psicologia e outras áreas da ciência.
 
-O coeficiente de Pearson ($r_{perason})$ é estimado da seguinte forma:
+O coeficiente de Pearson (e.g., $r_{pearson})$ é estimado da seguinte forma:
 
 
 $$r_{pearson} = \frac{\sum_{i=1}^n (x_i - \overline{x}) (y_i - \overline{y})}{\sqrt{\sum_{i=1}^n ((x_i - \overline{x})^2 \sum_{i=1}^n ((y_i - \overline{y})^2}}$$
