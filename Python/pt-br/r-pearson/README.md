@@ -73,9 +73,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](coeficiente-de-correlacao-%28r-pearson%29_files/coeficiente-de-correlacao-%28r-pearson%29_6_0.png)
-    
+
 
 
 ## Estimação do valor do $r_{pearson}$
@@ -89,7 +89,7 @@ print("r pearson = ", round(r_pearson, 4))
 ```
 
     r pearson =  0.68
-    
+
 
 ### Interpretação
 
@@ -154,9 +154,9 @@ $$ t_0 = \frac{r_{pearson}\sqrt{n-2}}{\sqrt{1-r_{pearson}^2}}$$
 
 que segue a distribuição *t-Student* com $n-2$ graus de liberdade ***SE*** a hipótese nula for verdadeira. Neste caso, o valor crítico é obtido através da distribuição *t-Student* e a conclusão do teste é:
 
-> Se $|t_0| > t_{1-\alpha /2, n-2}$, temos evidências para rejeitar a hipótese nula, e $\rho \neq 0 $;
+> Se $|t_0| > t_{1-\alpha /2, n-2}$, temos evidências para rejeitar a hipótese nula, e $\rho \neq 0$;
 
-> Se $|t_0| \geq t_{1-\alpha /2, n-2}$, não temos evidências para rejeitar a hipótese nula, e $\rho = 0 $;
+> Se $|t_0| \geq t_{1-\alpha /2, n-2}$, não temos evidências para rejeitar a hipótese nula, e $\rho = 0$;
 
 
 
@@ -169,7 +169,7 @@ print("t0 = ", round(t_calc_pearson, 4))
 ```
 
     t0 =  1.6064
-    
+
 
 ### Obtendo o valor crítico da distribuição t de Student
 
@@ -180,7 +180,7 @@ print("t critico = ", round(t_critico_pearson, 4))
 ```
 
     t critico =  3.1824
-    
+
 
 ### Concluindo o teste
 
@@ -193,7 +193,7 @@ else:
 ```
 
     Falha em rejeitar H0, e o coeficiente de Pearson é igual a zero (com 95.0% de confiança).
-    
+
 
 O $p-valor$ deste teste é o segundo valor retornado por `stats.pearsonr(x,y)`. Contudo, este p-valor é valido apenas para o caso da hipótese nula não ter sido rejeitada.
 
@@ -203,7 +203,7 @@ print("p-valor = ", round(p_pearson, 4))
 ```
 
     p-valor =  0.2065
-    
+
 
 > NOTA: o resultado acima é igual ao obtido ao verificar a significância do coeficiente angular quando se ajusta a equação da reta.
 
@@ -234,9 +234,9 @@ onde $\rho_0$ é o valor esperado para o coeficiente de correlação. As hipóte
 
 Os valores críticos são obtidos da distribuição Normal padrão bilateral ( $Z_{1-\alpha/2}$). Podemos então concluir o teste da seguinte forma:
 
-> Se $|Z_0| > Z_{1-\alpha/2}$, temos evidências para rejeitar a hipótese nula, e $\rho \neq \rho_0 $;
+> Se $|Z_0| > Z_{1-\alpha/2}$, temos evidências para rejeitar a hipótese nula, e $\rho \neq \rho_0$;
 
-> Se $|Z_0| \leq Z_{1-\alpha/2}$, não temos evidências para rejeitar a hipótese nula, e $\rho = \rho_0 $;
+> Se $|Z_0| \leq Z_{1-\alpha/2}$, não temos evidências para rejeitar a hipótese nula, e $\rho = \rho_0$;
 
 Para exemplificar, vamos verificar se o coeficiente de Pearson do conjunto de dados é igual a 0.99.
 
@@ -286,13 +286,13 @@ else:
 ```
 
     Rejeita H0, e o coeficiente de Pearson é diferente de 0.99 (com 95.0% de confiança).
-    
+
 
 > Note que já sabiamos que o coeficiente de Pearson era igual a 0 (através do teste t de Student), e não faz sentido testar para outro valor. Foi feito apenas para ter um exemplo numérico.
 
 ## Intervalo de confiança do Coeficiente de Pearson
 
-Para estimar o intervalo de confinça do $r_{pearson}$, basta estimar os limites inferior e superior utilizando a transformação r-para-Z de Fisher. 
+Para estimar o intervalo de confinça do $r_{pearson}$, basta estimar os limites inferior e superior utilizando a transformação r-para-Z de Fisher.
 
 O limite inferior é estimado através da relação:
 
@@ -415,7 +415,7 @@ f"{round(ic_lower, 4)} <= {round(r_pearson, 4)} <= {round(ic_upper, 4)} (com {10
 
 ## Visualização gráfica
 
-Podemos gerar um gráfico indicando os limites inferior e superior do coeficiente de Pearson, juntamente com a distribuição teórica, de forma a relacionar o coeficiente transformado com o coeficiente na escala original. 
+Podemos gerar um gráfico indicando os limites inferior e superior do coeficiente de Pearson, juntamente com a distribuição teórica, de forma a relacionar o coeficiente transformado com o coeficiente na escala original.
 
 Inicialmente, vamos criar o intervalo teórico para a função hiperbólica inversa:
 
@@ -438,9 +438,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](coeficiente-de-correlacao-%28r-pearson%29_files/coeficiente-de-correlacao-%28r-pearson%29_45_0.png)
-    
+
 
 
 Agora podemos adicionar o valor obtido para o coeficiente de pearson, relacionando o valor transformado com o valor real:
@@ -457,9 +457,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](coeficiente-de-correlacao-%28r-pearson%29_files/coeficiente-de-correlacao-%28r-pearson%29_47_0.png)
-    
+
 
 
 E então adicionamos os limites inferior e superior:
@@ -478,9 +478,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](coeficiente-de-correlacao-%28r-pearson%29_files/coeficiente-de-correlacao-%28r-pearson%29_49_0.png)
-    
+
 
 
 Uma edição mais adequada do gráfico resulta em
@@ -499,16 +499,16 @@ plt.show()
 ```
 
 
-    
+
 ![png](coeficiente-de-correlacao-%28r-pearson%29_files/coeficiente-de-correlacao-%28r-pearson%29_51_0.png)
-    
+
 
 
 ## Comentários
 
-Apesar da baixa aplicabilidade, a estatística do coeficiente de Pearson e os testes de hipótese são uma excelente forma de demonstrar através de um conceito simples (o coeficiente de correlação), a importancia da forma da distribuição. 
+Apesar da baixa aplicabilidade, a estatística do coeficiente de Pearson e os testes de hipótese são uma excelente forma de demonstrar através de um conceito simples (o coeficiente de correlação), a importancia da forma da distribuição.
 
-Um ponto relevante a ser discutido é o uso da distribuição Normal para obter os valores críticos. No exemplo utilizado, temos apenas 5 observações, o que não é suficiente para adotar a distribuição Normal. Talvez o uso da distribuição t de Student seja mais adequada para conjuntos de dados pequenos (e.g. $n<30$), de forma a "punir" o intervalo de confiança devido ao baixo tamanho amostral. 
+Um ponto relevante a ser discutido é o uso da distribuição Normal para obter os valores críticos. No exemplo utilizado, temos apenas 5 observações, o que não é suficiente para adotar a distribuição Normal. Talvez o uso da distribuição t de Student seja mais adequada para conjuntos de dados pequenos (e.g. $n<30$), de forma a "punir" o intervalo de confiança devido ao baixo tamanho amostral.
 
 Devido a baixo tamanho amostral, é muito provavel que o intervalo do coeficiente de Person esta sub-estimado.
 
@@ -535,4 +535,3 @@ Devido a baixo tamanho amostral, é muito provavel que o intervalo do coeficient
 - Re: Loftus, G. R. & Loftus, E. F. (1988). Essence of Statistics (2ª Edition). New York: McGraw Hill. Disponível em <https://faculty.washington.edu/gloftus/P317-318/Useful_Information/r_to_z/PearsonrCIs.pdf>.
 
 - Montgomery, D. C.; Peck, L. A.; Vining G. G. (2012). Introduction to Linear Regression Analysis (5ª Edição). JOHN WILEY & SONS, INC.
-
