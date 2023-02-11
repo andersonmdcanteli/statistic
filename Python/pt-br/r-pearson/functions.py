@@ -1,3 +1,6 @@
+import numpy as np
+from scipy.stats import norm
+
 def pearson_test(r_pearson, size, rho=0.0, alfa=0.05):
     """Verifica se o coeficiente de correlação (r de Pearson) é igual a um valor pré-estabelecido.
 
@@ -74,7 +77,7 @@ def pearson_test(r_pearson, size, rho=0.0, alfa=0.05):
     # calculando a estatística do teste
     Z_0 = (np.arctanh(r_pearson) - np.arctanh(rho))*np.sqrt((n_size - 3))
     # calculando o valor crítico
-    z_critical = stats.norm.ppf(1 - alfa/2)
+    z_critical = norm.ppf(1 - alfa/2)
     # concluindo o teste
     if np.abs(Z_0) > z_critical:
         result = f"Rejeita H0, e o coeficiente de Pearson é diferente de {rho} (com {100*(1-alfa)}% de confiança)."
@@ -83,3 +86,6 @@ def pearson_test(r_pearson, size, rho=0.0, alfa=0.05):
 
 
     return Z_0, z_critical, result, alfa
+
+
+
